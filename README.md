@@ -10,8 +10,8 @@
 
 ### Start locally
 
-echo "# HeadingName" >> README.md
-git init
+echo "# HeadingName" >> README.md  
+git init  
 git add . #to add all
 git status
 git commit -m "comments for the commit"
