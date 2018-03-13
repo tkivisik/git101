@@ -1,15 +1,41 @@
 # Git Notes
 
-**General commands**
+## General commands
 
-* git status
-* git log
-* git remote
+### Getting Help
+See git help
+```bash
+git --help
+```
+
+See git manual
+```bash
+man git
+```
+
+
+### General
+See the status of git. Which branch are you on and which files have been modified.
+```bash
+git status
+```
+
+```bash
+git log
+```
+
+```bash
+git remote
+```
+
+```bash
+git branch
+```
 
 ## Creating a Repository
 
 ### Start locally
-
+```bash
 echo "# HeadingName" >> README.md  
 git init  
 git add . #to add all  
@@ -18,6 +44,7 @@ git commit -m "comments for the commit"
 git remote origin https://www.github.com/tkivisik/RepositoryName  
 git push origin master  
 git status  
+```
 
 ### Start remotely
 
