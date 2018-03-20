@@ -100,8 +100,10 @@ git checkout master
 git pull origin master
 git merge newbranch
 git push origin master
-git branch -d newbranch
-git push origin --delete newbranch
+
+# Clean up development branches locally and remotely
+git branch -d newbranch             # locally
+git push origin --delete newbranch  # remotely
 ```
 
 
