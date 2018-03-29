@@ -71,20 +71,32 @@ git clone https://www.github.com/github-user-name/repository-name
 **General**
 
 ```bash
+# Make sure the local branch is up to date with the remote
 git pull <remotename> <branchname>
+
+# The next two commands can be combined into writin:
+# git checkout -b <newbranchname>
 git branch <newbranchname>
 git checkout <newbranchname>
-# The last two commands can be combined into writin:
-# git checkout -b <newbranchname>
 
+
+# The next four steps are to be repeated until a new branch is mature enough
+# to be merged back into the main branch:
 # *heavy programming*
 git add .
 git commit -m "<comment>"
-git checkout <branchname>
+git push origin <newbranchname>
+
+# Switch back to the main branch, make sure you have the latest remote version
+# of it locally, then merge the new branch into it and push it to remote.
+git checkout <branchname>   # switch back to devel branch for example
 git pull origin <branchname>
 git merge <newbranchname>
 git push origin <branchname>
+
+# Clean up (remove) the branch locally
 git branch -d <newbranchname>
+# Clean up (remove) the branch remotely
 git push origin --delete <newbranchname>
 ```
 
