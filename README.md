@@ -23,6 +23,9 @@ git status
 Show recent commit history with an author, date and a commit message.
 ```bash
 git log
+
+# Also show detailed branches
+git log --graph --all --decorate
 ```
 
 Show the name of a tracked remote (non-local) repository. Remote has a name and a URL associated with it.  Origin is a common remote repository name.
